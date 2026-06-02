@@ -1,0 +1,110 @@
+#video-presentacion p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.seccion-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 35px;
+}
+
+.contenedor-video {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16/9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    background-color: #000;
+}
+
+.contenedor-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.resumen-video-pitch {
+    margin-top: 30px;
+}
+
+.resumen-video-pitch h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px dashed #e0e0e0;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+}
+
+.cuadricula-pitch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.tarjeta-pitch {
+    background-color: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+.tarjeta-pitch h4 {
+    color: #2c3e50;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.tarjeta-pitch .insignia {
+    display: inline-block;
+    background-color: #ebf5fb;
+    color: #2980b9;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.tarjeta-pitch p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0;
+}
+
+.instrucciones-video {
+    margin-top: 20px;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border-left: 4px solid #2c3e50;
+    width: 100%;
+    max-width: 800px;
+}
+
+.instrucciones-video h4 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.instrucciones-video ul {
+    margin-left: 20px;
+    line-height: 1.6;
+    list-style-type: disc;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .cuadricula-pitch {
+        grid-template-columns: 1fr;
+    }
+}
