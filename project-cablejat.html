@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detall Projecte - Taller de Cablejat de Xarxa</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="project-details.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espai Web Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Presentació</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cv.html">Currículum / Europass</a></li>
+                <li><a href="portfoli.html" class="activo">Portfoli de Projectes</a></li>
+                <li><a href="video.html">Video Pitch</a></li>
+                <li><a href="altres.html">Altres</a></li>
+                <li><a href="contacte.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <div class="cabecera-detalle-proyecto">
+            <span class="modulo-proyecto">Mòdul: Xarxes Locals</span>
+            <h2>Taller de Cablejat de Xarxa</h2>
+        </div>
+
+        <div class="contenido-detalle-proyecto">
+            <div class="bloque-seccion-proyecto">
+                <h3>Objectiu de la Pràctica</h3>
+                <p>L'objectiu principal d'aquesta pràctica és el disseny, muntatge i comprovació de cables de xarxa per a connexions locals d'acord amb els estàndards internacionals de cablejat estructurat. S'aprèn a manipular l'eina de crimpar i a utilitzar testers de xarxa per verificar la integritat de la connexió.</p>
+                
+                <a href="Taller de cablejat.pdf" class="boton-descarga" download="Taller_de_cablejat.pdf">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descarregar Informe del Taller (PDF)
+                </a>
+            </div>
+
+            <div class="bloque-seccion-proyecto">
+                <h3>Desenvolupament i Muntatge</h3>
+                <p>Durant el taller s'han realitzat diferents tipus de cables: rectes (per a connectar ordinadors a switches) i encreuats (per a connectar dispositius del mateix tipus). S'ha dut a terme el pelat de la coberta del cable UTP, l'ordenació dels parells trenats segons la norma de colors i l'acoblament del connector RJ45 mitjançant crimpadora.</p>
+                <p>El major repte va ser mantenir la torsió dels cables fins al connector per minimitzar el soroll electromagnètic i garantir que cadascun dels 8 pins fes contacte físic ferm, evitant errors de continuïtat verificats posteriorment amb el tester.</p>
+            </div>
+
+
+
+            <div class="bloque-seccion-proyecto">
+                <h3>Simulació de Resolució de la Comprovació de Pins</h3>
+                <p>Estat de connexió representat de manera lògica en un Tester de xarxa per a un cable recte:</p>
+                
+                <div class="maqueta-visual">
+                    <table class="maqueta-tabla-bd">
+                        <thead>
+                            <tr>
+                                <th>Pin Emissor (Extrem A)</th>
+                                <th>Estat del LED</th>
+                                <th>Pin Receptor (Extrem B)</th>
+                                <th>Estat de Transmissió</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pin 1 (Blanc/Taronja)</td>
+                                <td>Actiu / Verd</td>
+                                <td>Pin 1 (Blanc/Taronja)</td>
+                                <td>Correcte</td>
+                            </tr>
+                            <tr>
+                                <td>Pin 2 (Taronja)</td>
+                                <td>Actiu / Verd</td>
+                                <td>Pin 2 (Taronja)</td>
+                                <td>Correcte</td>
+                            </tr>
+                            <tr>
+                                <td>Pin 3 (Blanc/Verd)</td>
+                                <td>Actiu / Verd</td>
+                                <td>Pin 3 (Blanc/Verd)</td>
+                                <td>Correcte</td>
+                            </tr>
+                            <tr>
+                                <td>Pins 4-8 (Resta de parells)</td>
+                                <td>Actius / Verd</td>
+                                <td>Pins 4-8 (Resta de parells)</td>
+                                <td>Correcte</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenedor-boton-volver">
+            <a href="portfoli.html" class="boton-volver">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle;">
+                    <line x1="19" y1="12" x2="5" y2="12"></line>
+                    <polyline points="12 19 5 12 12 5"></polyline>
+                </svg>
+                Tornar al Portfoli
+            </a>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p> 2026 - Marc Durán </p>
+    </footer>
+
+</body>
+</html>
