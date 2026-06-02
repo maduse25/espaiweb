@@ -1,0 +1,279 @@
+.cv-seccion {
+    margin-bottom: 30px;
+}
+
+.cv-seccion h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    border-bottom: 2px dashed #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.cv-linea-tiempo {
+    border-left: 3px solid #2c3e50;
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.cv-elemento {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.cv-elemento::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #2c3e50;
+    border: 2px solid #ffffff;
+}
+
+.cv-fecha {
+    font-weight: bold;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.cv-titulo {
+    font-size: 1.15rem;
+    color: #2c3e50;
+    margin: 3px 0;
+}
+
+.cv-institucion {
+    font-style: italic;
+    color: #34495e;
+    margin-bottom: 8px;
+}
+
+.cv-cuadricula-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.cv-tarjeta-habilidad {
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.cv-tarjeta-habilidad h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.cv-tarjeta-habilidad ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.cv-tarjeta-habilidad ul li {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv-nivel {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+}
+
+.contenedor-botones {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.boton-descarga {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #2c3e50;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.boton-descarga:hover {
+    background-color: #1a252f;
+}
+
+.boton-descarga svg {
+    vertical-align: middle;
+}
+
+.contenedor-europass {
+    margin-top: 50px;
+    border-top: 3px double #e0e0e0;
+    padding-top: 40px;
+}
+
+.cabecera-europass {
+    background-color: #003366;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.titulo-cabecera-europass h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titulo-cabecera-europass p {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    margin-top: 5px;
+}
+
+.logo-europass {
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+
+.logo-europass span {
+    color: #00b0f0;
+}
+
+.fila-europass {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+}
+
+.etiqueta-europass {
+    font-weight: bold;
+    color: #003366;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+}
+
+.valor-europass {
+    color: #333;
+}
+
+.subfila-europass {
+    margin-bottom: 15px;
+}
+
+.subfila-europass h4 {
+    color: #2c3e50;
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.organizacion-europass {
+    font-style: italic;
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.periodo-europass {
+    color: #7f8c8d;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.tabla-idiomas {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.tabla-idiomas th, .tabla-idiomas td {
+    border: 1px solid #dcdcdc;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.tabla-idiomas th {
+    background-color: #f5f5f5;
+    color: #003366;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+}
+
+.tabla-idiomas td.nombre-idioma {
+    text-align: left;
+    font-weight: 600;
+    background-color: #fafafa;
+}
+
+.tabla-idiomas td.codigo-nivel {
+    background-color: #ebf5fb;
+    font-weight: bold;
+    color: #2980b9;
+}
+
+.cv-lista {
+    margin-left: 20px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .fila-europass {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .tabla-idiomas {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+.cv-contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background: #fdfdfd;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.cv-imagen-previsualizacion {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.cv-imagen-previsualizacion:hover {
+    transform: scale(1.02);
+}

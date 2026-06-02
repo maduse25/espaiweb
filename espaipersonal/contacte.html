@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espai Web Personal - Contacte</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contacte.css">
+</head>
+<body>
+
+    <header>
+        <h1>Espai Web Personal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Presentació</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="cv.html">Currículum / Europass</a></li>
+                <li><a href="portfoli.html">Portfoli de Projectes</a></li>
+                <li><a href="video.html">Video Pitch</a></li>
+                <li><a href="altres.html">Altres</a></li>
+                <li><a href="contacte.html" class="activo">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacte</h2>
+            <p>Si tens qualsevol dubte, vols col·laborar en algun projecte o simplement posar-te en contacte amb mi, pots omplir el següent formulari o escriure'm directament a través de les meves xarxes socials.</p>
+
+            <div class="contenedor-contacto">
+                <div class="envoltorio-formulario-contacto">
+                    <form action="#" method="POST" onsubmit="alert('Gràcies pel teu missatge! Això és una simulació, el teu missatge no s\'ha enviat enlloc.'); return false;">
+                        <div class="grupo-formulario">
+                            <label for="nom">Nom Complet *</label>
+                            <input type="text" id="nom" name="nom" class="control-formulario" placeholder="El teu nom i cognoms" required autocomplete="name">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="email">Correu Electrònic *</label>
+                            <input type="email" id="email" name="email" class="control-formulario" placeholder="correu@exemple.com" required autocomplete="email">
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="assumpte">Assumpte *</label>
+                            <input type="text" id="assumpte" name="assumpte" class="control-formulario" placeholder="Motiu de la teva consulta" required>
+                        </div>
+
+                        <div class="grupo-formulario">
+                            <label for="missatge">Missatge *</label>
+                            <textarea id="missatge" name="missatge" class="control-formulario" placeholder="Escriu el teu missatge aquí..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="boton-enviar">Enviar Missatge</button>
+                    </form>
+                </div>
+
+                <div class="envoltorio-info-contacto">
+                    <div class="tarjeta-info">
+                        <h4>Dades de Contacte</h4>
+                        <p>
+                            <strong>Ubicació:</strong> Badalona, Catalunya
+                        </p>
+                        <p>
+                            <strong>Correu:</strong> <a href="mailto:marcduran2009@gmail.com">marcduran2009@gmail.com</a>
+                        </p>
+                        <p>
+                            <strong>Telèfon:</strong> +34 680 97 03 00 
+                        </p>
+                    </div>
+
+                    <div class="tarjeta-info">
+                        <h4>Xarxes Professionals</h4>
+                        <p>Troba'm a internet i segueix els meus projectes de prop:</p>
+                        <div class="enlaces-sociales">
+                            <a href="https://github.com" target="_blank" class="icono-social" title="GitHub" rel="noopener noreferrer">GH</a>
+                            <a href="https://linkedin.com" target="_blank" class="icono-social" title="LinkedIn" rel="noopener noreferrer">in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p> 2026 - Marc Durán </p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+#sobre-mi .texto-presentacion {
+    width: 100%;
+}
+
+#sobre-mi ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    list-style-type: square;
+    line-height: 1.8;
+}
+
+.lista-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.etiqueta-habilidad {
+    background-color: #e8ecef;
+    color: #2c3e50;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.seccion-video-presentacion {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.seccion-video-presentacion h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.contenedor-video-perfil {
+    max-width: 640px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.video-perfil {
+    width: 100%;
+    display: block;
+}
